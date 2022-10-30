@@ -1,0 +1,28 @@
+// Did a simple Program to convert the Dollar to Rupees and Vice Versa.
+import java.util.Scanner;
+
+public class currency_converter {
+    public static void main(String[] args) {
+        System.out.println("type D for dollar \n type R for rupees");
+        Scanner sc = new Scanner(System.in);
+        String p = sc.next();
+        char s = p.charAt(0);
+        System.out.println("enter the number");
+        Scanner scr = new Scanner(System.in);
+        int code = scr.nextInt();
+
+        switch (s)
+        {
+            case 'D':
+            case 'd':
+                System.out.println("rupes is = " +code*80);
+                break;
+            case 'R':
+            case 'r':
+                System.out.println("dollar is = "+80/code);
+                break;
+            default:
+                System.out.println("invaild");
+        }
+    }
+}
