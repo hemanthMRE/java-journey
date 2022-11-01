@@ -1,0 +1,21 @@
+//checking whether it's a square or not
+
+import java.util.Scanner;
+
+public class lb {
+    public static void main(String[] args) {
+
+        System.out.println("enter the value of length and breadth");
+        Scanner sc = new Scanner(System.in);
+        int length = sc.nextInt();
+        int breath = sc.nextInt();
+        if(length==breath)
+        {
+            System.out.println("its a square");
+        }
+        else
+        {
+            System.out.println("its not a square");
+        }
+    }
+}
